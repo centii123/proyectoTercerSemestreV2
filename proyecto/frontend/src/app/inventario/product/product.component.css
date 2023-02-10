@@ -1,0 +1,98 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    margin-left: 15vh;
+    
+}
+.producto{
+    margin: 0;
+    font-size: 25px;
+}
+.nuevo{
+    margin: 0;
+    font-size: 22px;
+}
+.texto{
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 2px;
+}
+.inp{
+   padding: 5px;
+   border-radius: 7px;
+   width: 80vh;
+   margin: 7px;
+   font-size: 12px;
+   border-color: blue;
+
+}
+
+.comp-vent{
+    padding: 5px;
+    border-radius: 7px;
+    width: 40vh;
+    font-size: 12px;
+    margin: 8px;
+    border-color: blue;
+}
+.compra{
+    border-radius: 7px;
+    font-size: 18px;
+}
+.venta{
+    display: block;
+    margin-left: 45vh;
+    position: relative;
+    bottom: 103px;
+    
+}
+.posicion{
+    padding: 5px;
+    width: 20vh;
+    font-size: 18px;
+    position: relative;
+    bottom: 120px;
+}
+.posicion2{
+    display: block;
+    margin-left: 33vh;
+    position: relative;
+    bottom: 208px;
+}
+.posicion3{
+    display: block;
+    margin-left: 65vh;
+    position: relative;
+    bottom: 295px;
+}
+
+.stock{
+    padding: 5px;
+    border-radius: 7px;
+    width: 27vh;
+    font-size: 12px;
+    border-color: blue;
+}
+.opcion{
+    width: 40vh;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: blue;
+}
+.boton{
+    background-color: aqua;
+    color: antiquewhite;
+    font-size: 25px;
+    height: 35px;
+    border-radius: 10px ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: aqua;
+    position: relative;
+    bottom: 280px;
+}

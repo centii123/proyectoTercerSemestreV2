@@ -1,0 +1,194 @@
+:root{
+    --nav-color: aqua;
+    --body-color: gray;
+    --footer-color:blue;
+    --input-color:white;
+    --comprar-color:green;
+    --cancelar-color:red;
+    --comprar1-color:rgba(0, 128, 0, 0.350);
+    --cancelar2-color:rgba(255, 0, 0, 0.350);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    padding-top: 50px;
+    width: 100%;
+    min-height: 78vh;
+    padding-bottom: 25px;
+}
+nav{
+    width: 100%;
+    height: 13vh;
+    background-color: var(--nav-color);
+}
+footer{
+    width: 100%;
+    height: 11vh;
+    background-color: var(--footer-color);
+}
+.contenedor{
+    width: 100%;
+    background-color:gray;
+}
+
+.ventas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ventas h3{
+    padding: 0 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: 1px solid black;
+}
+.datos{
+    display: flex;
+    justify-content: space-around;  
+}
+.datos input{
+    border-radius: 5px;
+    height: 25px;
+    font-size: 18px;
+}
+.cliente{
+    width: 270px;
+}
+.cedula{
+    width: 180px;
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table td, table th{
+    border: 1px solid black;
+    padding: 0 30px;
+}
+tbody td, tbody th{
+    border: 1px solid black;
+    padding: 0 30px;
+    text-align: center;
+}
+.compra{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.comprar{
+    cursor: pointer;
+    background: green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.cancelar{
+    cursor: pointer;
+    background: red;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.comprar:hover{
+    background: rgba(0, 128, 0, 0.350);
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.cancelar:hover{
+    background: rgba(255, 0, 0, 0.350);
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.cantidad{
+background: none;
+border: none;
+width: 40px;
+outline: none;
+
+}
+.centrar{
+    padding-left: 55px;
+}
+.parte2{
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left:120px ;
+}
+.pago{
+    background: none;
+    border: none;
+}
+.tota{
+    text-align: center;
+}
+.buscadorProduct{
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 100%;
+    width: 185px;
+    }
+    .selector{
+        cursor: pointer;
+
+    }
+    .selector:hover{
+        background-color: gray;
+    }
+    .alerta{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .comprado {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        margin-left: 75%;
+        background: greenyellow;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;   
+        border: 1px solid black;
+      }
+      .cancelado {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        margin-left: 75%;
+        background: rgba(255, 0, 0, 0.534);
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;   
+        border: 1px solid black;
+      }
+    .eliminar, .eliminar:hover{
+        margin: 2px;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    

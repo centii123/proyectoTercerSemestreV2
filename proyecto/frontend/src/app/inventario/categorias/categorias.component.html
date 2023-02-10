@@ -1,0 +1,52 @@
+<app-nav></app-nav>
+<app-footer></app-footer>
+
+<div *ngIf="!update" class="contenedor">
+  <div class="contenedor2">
+    <div class="elemento1">
+      <div class="titulos">
+        <h2>Registro de Categorias</h2>
+      </div><br>
+      <form action="" class="formulario">
+<<<<<<< HEAD
+        <input type="text" 
+        name="categoriaNombre"
+        [(ngModel)]="categoriasNuevo.nombre_cat" 
+        id="categoriaNombre"
+        (change)="print()"
+        class="input" 
+        placeholder="Nombre de la Categoria">
+=======
+        <input type="text" name="nombre_cat" [(ngModel)]="categoriasNuevo.nombre_cat" class="input" placeholder="Nombre de la Categoria">
+>>>>>>> 307baa0ab9dc806800101fff836807df2d39392a
+        <br><br>
+        <button (click)="nuevaCategoria(categoriasNuevo)"
+        value="guardar" class="boton"
+        >Registrar</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div *ngIf="update" class="contenedor">
+  <div class="contenedor2">
+    <div class="elemento1">
+      <div class="titulos">
+        <h2>Actualizar de Categorias</h2>
+      </div><br>
+      <form action="" class="formulario">
+        <input 
+        type="text" 
+        name="categoriaNombre"
+        [(ngModel)]="categoriasEdit.nombre_cat" class="input" 
+        id="categoriaNombre"
+        (change)="print()"
+        placeholder="">
+        <br><br>
+        <button (click)="updateCategoria(categoriasEdit)"  type="submit" id="boton" value="guardar" class="boton">Actualizar</button>
+      </form>
+    </div>
+
+  </div>
+</div>

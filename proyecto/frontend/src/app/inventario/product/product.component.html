@@ -1,0 +1,88 @@
+<app-nav></app-nav>
+<div *ngIf="!update" class="contenedor">
+    <div class="producto">
+        <h1>Productos</h1>
+    </div>
+    <div class="nuevo">
+        <h2>Nuevos Productos</h2>
+    </div>
+
+    <form class="formu">
+        <label class="texto">Nombre del producto</label><br>
+        <input name="nombre_p" [(ngModel)]="productoNuevo.nombre_p" type="text" class="inp"  required="required"><br>
+        <label class="texto">Descripcion</label><br>
+        <input name="descripcion_p" [(ngModel)]="productoNuevo.descripcion_p" type="text" class="inp"  required="required"><br>
+        <div class="compra">
+            <label class="texto">Precio de compra</label><br>
+            <input name="precio_compra" [(ngModel)]="productoNuevo.precio_compra" type="number" name="precio_compra" class="comp-vent" required="required">
+        </div>
+        <div class="venta">
+            <label class="texto">Precio de venta</label><br>
+            <input name="precio_venta" [(ngModel)]="productoNuevo.precio_venta" type="number" class="comp-vent" required="required">
+        </div>
+        <div class="posicion">
+            <label class="texto">Stock</label><br>
+            <input name="stock" [(ngModel)]="productoNuevo.stock" type="number" class="stock" required="required"><br>
+        </div>
+        <div class="posicion2">
+            <label class="texto">Stock Minimo</label><br>
+            <input name="stock_min" [(ngModel)]="productoNuevo.stock_min" type="number" class="stock" required="required"><br>
+        </div>
+
+        <div class="posicion3">
+            <label class="texto">Categorias</label><br>
+            <select name="id_cat" [(ngModel)]="productoNuevo.id_cat" class="opcion" required="required">
+                <option  *ngFor="let cat of categories" [ngValue]="cat.id_cat" >{{cat.nombre_cat}}</option>
+            </select><br>
+        </div>
+    </form>
+    <div class="boton">
+        <button type="submit" (click)="producto()">Guardar</button>
+    </div>
+
+</div>
+}
+
+<div *ngIf="update" class="contenedor">
+    <div class="producto">
+        <h1>Productos</h1>
+    </div>
+    <div class="nuevo">
+        <h2>Actualizar Productos</h2>
+    </div>
+
+    <form class="formu">
+        <label class="texto">Nombre del producto</label><br>
+        <input name="nombre_p" [(ngModel)]="updateProd.nombre_p" type="text" class="inp"  required="required"><br>
+        <label class="texto">Descripcion</label><br>
+        <input name="descripcion_p" [(ngModel)]="updateProd.descripcion_p" type="text" class="inp"  required="required"><br>
+        <div class="compra">
+            <label class="texto">Precio de compra</label><br>
+            <input name="precio_compra" [(ngModel)]="updateProd.precio_compra" type="number" name="precio_compra" class="comp-vent" required="required">
+        </div>
+        <div class="venta">
+            <label class="texto">Precio de venta</label><br>
+            <input name="precio_venta" [(ngModel)]="updateProd.precio_venta" type="number" class="comp-vent" required="required">
+        </div>
+        <div class="posicion">
+            <label class="texto">Stock</label><br>
+            <input name="stock" [(ngModel)]="updateProd.stock" type="number" class="stock" required="required"><br>
+        </div>
+        <div class="posicion2">
+            <label class="texto">Stock Minimo</label><br>
+            <input name="stock_min" [(ngModel)]="updateProd.stock_min" type="number" class="stock" required="required"><br>
+        </div>
+
+        <div class="posicion3">
+            <label class="texto">Categorias</label><br>
+            <select name="id_cat" [(ngModel)]="updateProd.id_cat" class="opcion" required="required">
+                <option  *ngFor="let cat of categories" [ngValue]="cat.id_cat" >{{cat.nombre_cat}}</option>
+            </select><br>
+        </div>
+    </form>
+    <div class="boton">
+        <button type="submit" (click)="updateProducto()">Guardar.</button>
+    </div>
+
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,44 @@
+<body>
+    <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2>Register</h2>
+            <p class="hint-text">Cree su cuenta</p>
+            <div class="form-group">
+
+              <div class="form-group">
+                <select name="rol" [(ngModel)]="empleado.id_rol" id="rol" class="form-control">
+                  <option [value]="rol.id_rol" *ngFor="let rol of roles">{{rol.descripcion}}</option>
+                </select>
+            </div>
+
+              <div class="form-group">
+                <input type="text" [(ngModel)]="empleado.cedula_empleados" class="form-control" name="email" placeholder="Cedula" required="required" [maxLength]="10" pattern="\d{10}" required>
+            </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" [(ngModel)]="empleado.nombres" class="form-control" name="first_name" placeholder="First Name" required="required">
+                    </div>
+                    <div class="col">
+                        <input type="text" [(ngModel)]="empleado.apellidos" class="form-control" name="last_name" placeholder="Last Name" required="required">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" [(ngModel)]="empleado.email"  class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" [(ngModel)]="empleado.clave"  class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" [(ngModel)]="claveV"  class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                <p>{{claveV === empleado.clave? "La contraseña coincide": "La contraseña no coincide"}}</p>
+            </div>
+            <div class="form-group">
+                <button type="submit" (click)="register(empleado)" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
+        </form>
+        <div class="text-center">Ya tiene una cuenta?
+          <a [routerLink]= "['../login']">Iniciar Sesion</a>
+        </div>
+    </div>
+  </body>

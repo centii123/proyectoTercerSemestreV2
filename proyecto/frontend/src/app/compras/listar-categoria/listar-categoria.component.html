@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+<app-footer></app-footer>
+
+<div class="contenedor">
+    <div class="contenedor2">
+    
+<div class="elemento2">
+    <div class="titulos">
+      <h2>Categoría Proveedor</h2>
+    </div>
+
+    <div class="buscar">
+      <input type="search" class="bt-buscar">
+      <input type="submit" value="Buscar" class="bt-buscar"
+        style="background-color: blue; color: rgb(255, 255, 255); margin-left: 5px; border-radius: 5px;"><br><br>
+    </div>
+
+    <table class="table table-striped tabla1">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Especialización</th>
+       
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let categoria of categorias">
+          <th  scope="row">{{categoria.id_cat}}</th>
+          <td>{{categoria.especializacion}}</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>

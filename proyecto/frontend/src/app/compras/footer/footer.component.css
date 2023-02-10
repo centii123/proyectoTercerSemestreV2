@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #BDDFFF;
+    color: rgb(53, 52, 52);
+    
+}
+
+@media (max-width: 949px){
+   p{
+    font-size: 12px;
+   }
+   footer{
+    bottom: -80px;
+   }
+}
+@media (max-width: 439px){
+   
+    footer{
+     bottom: -100px;
+    }
+ }

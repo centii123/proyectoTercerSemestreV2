@@ -1,0 +1,109 @@
+:root{
+    --nav-color: aqua;
+    --body-color: gray;
+    --footer-color:blue;
+    --input-color:white;
+    --comprar-color:green;
+    --cancelar-color:red;
+    --comprar1-color:rgba(0, 128, 0, 0.350);
+    --cancelar2-color:rgba(255, 0, 0, 0.350);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(122, 220, 220);
+}
+h2{
+    text-align: center;
+}
+main{
+    margin-top: 50px;
+    background: gray;
+    padding: 10px 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table tr, table td{
+    border: 1px solid black;
+    padding: 0 30px;
+    text-align: center;
+}
+thead tr th, tbody tr td{
+    border: 1px solid black;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.cuerpo{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.informacion{
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    margin-right: 300px;
+    margin-top: 10px;
+}
+table1{
+    align-items: flex-start;
+    border-collapse:collapse;
+}
+table1 tr, table1 td{
+    border: 1px solid black;
+    padding: 0 30px;
+    text-align: center;
+}
+thead1 tr th, tbody1 tr td{
+    border: 1px solid black;
+    padding: 0 30px;
+    text-align: center;
+}
+.parte2{
+    display: flex;  
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-right: 280px;
+}
+.pago{
+    background: none;
+    border: none;
+}
+hr{
+    border: 1px solid black;
+}
+.hr1{
+    width: 100%;  
+}
+p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inputi{
+    border-radius: 7px;
+}
+h3{
+    font-size: 18px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    background: gray;
+    border: none;
+  }

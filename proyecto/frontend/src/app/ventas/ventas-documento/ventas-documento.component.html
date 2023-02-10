@@ -1,0 +1,63 @@
+
+    <div class="contenedor">
+        <main class="main">
+            <h2>Farmacia Yavirac</h2>
+            <hr>
+            <div class="informacion">
+                <h3>Cliente:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="inputi" [readonly]="true" [value]="nombre_cliente">
+                </h3>
+                <h3>Cedula:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="inputi" [readonly]="true" [value]="cedula_cliente">
+                </h3>
+                <h3>Fecha de emision:&nbsp;<input type="text" class="inputi" [value]="fecha_fac"></h3>
+                <h3>Nro° Factura:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="inputi" [value]="id_factura" [readonly]="true"></h3>
+            </div>
+            <div class="cuerpo">
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Descripcion</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr *ngFor="let item of facturaProductos">
+                            <td>{{ item.id_prod}}</td>
+                            <td>{{ item.nombre_p}}</td>
+                            <td>{{ item.cantidades}}</td>
+                            <td>{{ item.precio_venta}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="parte2">
+                <table class="table1">
+                    <thead class="thead1">
+                        <tr>
+                            <th>Forma de pago:</th>
+                            <th> <select name="pago" id="" class="pago">
+                                    <option value="efectivo">Efectivo</option>
+                                    <option value="tarjeta">Tarjeta</option>
+                                </select> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody1">
+                        <tr>
+                            <th>Total</th>
+                            <td>{{tot}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <hr class="hr1">
+        <input type="submit" onclick="window.print()" value="Imprimir" name="mostrar">
+        </main>
+
+    </div> 

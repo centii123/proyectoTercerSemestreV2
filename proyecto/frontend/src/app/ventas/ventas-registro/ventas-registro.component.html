@@ -1,0 +1,45 @@
+<app-ventas>
+   
+<div class="contenedor">
+    <!--<nav>
+         
+    </nav>-->
+    <div class="alert">
+        <h3 [ngClass]="{'registrado': mensaje === 'Registrado con éxito', 'sin_registrar': mensaje === 'Lo sentimos, ha ocurrido un problema. Vuelva a intentarlo.'}">{{mensaje}}</h3>
+    </div>
+    <main>
+       <div class="registro">
+            <h3>REGISTRO</h3> 
+            <div class="form">
+                <div class="form-R">
+
+                </div>
+                <div class="form-R">
+                    <input type="text" id="" class="" [(ngModel)]="data.cedula_cliente">
+                    <label class="label" for="">CEDULA</label>
+                </div>
+                <div class="form-R">
+                    <input type="text" id="" class="" [(ngModel)]="data.nombres">
+                    <label class="label" for="">NOMBRES</label>
+                </div>
+                <div class="form-R">
+                    <input type="text" id="" class="" [(ngModel)]="data.apellido">
+                    <label class="label" for="">APELLIDOS</label>
+                </div>
+                <div class="form-R">
+                    <input type="text" id="" class="" [(ngModel)]="data.email">
+                    <label class="label" for="">CORREO ELECTRONICO</label>
+                </div>
+                <div class="botones">
+                    <a routerLink="/ventas/cliente/"><button class="atras-boton boton" style="background-color: skyblue;">BUSCAR CLIENTE</button></a>
+                    <button (click)="CrearCliente();mostrarMensaje()"  type="submit" class="registro-boton boton">REGISTRAR</button>
+                </div>
+            </div>
+       </div>
+
+    </main>
+    <!--<footer></footer>-->
+
+</div>
+</app-ventas>
+

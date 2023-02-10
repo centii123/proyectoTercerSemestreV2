@@ -1,0 +1,53 @@
+<app-nav></app-nav>
+<app-footer></app-footer>
+
+
+
+<div class="contenedor">
+  <div class="contenedor2">
+
+    <div class="elemento2">
+      <div class="titulos">
+        <h2>Productos</h2>
+      </div>
+
+      <div class="buscar">
+        <input type="search" class="bt-buscar">
+        <input type="submit" value="Buscar" class="bt-buscar"
+          style="background-color: blue; color: rgb(255, 255, 255); margin-left: 5px; border-radius: 5px;">
+        <input type="submit" value="Crear Nuevo" class="bt-buscar"
+          style="background-color: blue; color: rgb(255, 255, 255); margin-left: 5px; border-radius: 5px;" routerLink="/inventario/product">
+        <br><br>
+      </div>
+
+      <div class="contenedor_tabla">
+        <table class="table table-striped tabla1">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Precio de Venta</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Actualizar</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let listar of Listar">
+              <td>{{listar.nombre_p}}</td>
+              <td>{{listar.descripcion_p}}</td>
+              <td>{{listar.stock}}</td>
+              <td>{{listar.precio_venta}}</td>
+              <td>{{listar.nombre_cat}}</td>
+              <td> <button [routerLink]="['../product']" [state]="listar" class="butt" name="update">Actualizar</button> </td>
+              <td> <button (click)="deleteProd(listar.id_prod)" class="but">Eliminar</button> </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

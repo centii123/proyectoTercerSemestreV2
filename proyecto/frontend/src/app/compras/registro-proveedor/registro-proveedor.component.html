@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<app-footer></app-footer>
+
+
+<div class="contenedor">
+    <div class="contenedor2">
+      <div class="elemento1">
+        <div class="titulos">
+          <h2>Registro de Proveedores</h2>
+        </div><br>
+        <form action="" class="formulario">
+          <input [(ngModel)]="registro.id_prov" name="ruc" type="number" class="input" placeholder="Ruc"><br><br>
+          <input [(ngModel)]="registro.nombre_prov" name="nombre" type="text" class="input" placeholder="Nombre"><br><br>
+          <input [(ngModel)]="registro.celular" name="celular" type="number" class="input" placeholder="Celular"><br><br>
+          <input [(ngModel)]="registro.direccion" name="direccion" type="text" class="input" placeholder="Dirección"><br><br>
+          <input [(ngModel)]="registro.id_cat" name="categoria" type="number" class="input" placeholder=" id categoria"><br><br>
+          <input (click)="registroP(registro)" name="boton" type="submit" id="boton" value="guardar" class="boton">
+        </form>
+      </div>
+    </div>
+</div>
+
+

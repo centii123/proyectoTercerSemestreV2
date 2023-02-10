@@ -1,0 +1,11 @@
+.butt {
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(75, 215, 70);
+}
+
+.but {
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(196, 23, 52);
+}

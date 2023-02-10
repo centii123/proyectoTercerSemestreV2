@@ -1,0 +1,108 @@
+.contenedor{
+    height: 100vh;
+
+}
+nav{
+    background-color: blue;
+    height: 13vh;
+}
+
+main{
+    height: calc(100vh - 24vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: blue;
+    height: 11vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+
+
+}
+.registro{
+    width: 500px; /*30vw*/
+    height: 40vh;
+    background-color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.label{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    color: #04889c;
+}
+.form-R{
+    position: relative;
+    width: 80%;
+}
+.form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 20px;
+    background: none;
+    border-bottom: 2px solid #04889c;
+    
+}
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.boton{
+    border: solid 2px black;
+    border-radius: 5px;
+    
+    color: white;
+}
+.registro-boton{
+    background-color: green;
+}
+h3{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.boton1{
+    border: solid 2px black;
+    border-radius: 5px;
+    
+    color: white;
+}
+.registro-boton1{
+    background-color: rgb(181, 159, 21);
+}
+.boton2{
+    border: solid 2px black;
+    border-radius: 5px;
+    
+    color: white;
+}
+.registro-boton2{
+    background-color: rgb(203, 15, 15);
+}
+
+.buscarCliente{
+position: absolute;
+background-color: black;
+color: white;
+width: 100%;
+}
+.selector{
+    cursor: pointer;
+
+}
+.selector:hover{
+    background-color: gray;
+}
+

@@ -1,0 +1,40 @@
+<app-ventas>
+<div class="contenedor">
+    <!--<nav> 
+    </nav>--> 
+    <main>
+       <div class="registro"> 
+            <h3>Cliente</h3>
+            <div class="form">
+                <div class="form-R">
+                </div>
+                <div class="form-R">
+                    <input type="text" id="" class="" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="Buscar clientes" (keyup)="clienteBuscador($event)" >
+                    <div class="buscarCliente">
+                        <div *ngIf="valor">
+                            <div *ngIf="client.message else hola">
+                                <div>cliente no encontrado</div>
+                            </div>  
+                            <ng-template #hola>
+                                <div *ngFor="let a of client">
+                                    <li class="selector" value="{{a.cedula_cliente}}" (click)="buscarCliente($event)">{{a.cedula_cliente}} {{a.nombres}}</li>
+                                </div>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <a routerLink="/ventas/registro/"><button class="atras-boton boton" style="background-color: skyblue;color:black;">REGISTRAR CLIENTE</button></a>
+                </div> 
+            </div>
+       </div> 
+    </main> 
+    <!--<footer></footer>-->
+</div>
+</app-ventas>
+
+
+
+
+
+

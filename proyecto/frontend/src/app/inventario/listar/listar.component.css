@@ -1,0 +1,105 @@
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+
+}
+
+.contenedor2 {
+
+  display: flex;
+  background-color: rgb(223, 224, 238);
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 20px;
+
+}
+
+
+
+.elemento2 {
+
+  margin-top: 30px;
+  width: 100%;
+}
+
+.tabla1 {
+
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  border-radius: 10px;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 727px) {
+  .contenedor_tabla{
+      overflow: scroll;
+  }
+}
+.titulos {
+  background-color: rgb(159, 161, 161);
+  width: 30%;
+  margin-left: 35%;
+  height: 30px;
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: Geneva;
+  text-align: center;
+  font-size: 19px
+}
+
+.input {
+  background: none;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: 0px;
+  border-bottom: 2px solid #006eff;
+}
+
+::placeholder {
+  color: #006eff;
+}
+
+.formulario {
+  margin-left: 25%;
+}
+
+.boton {
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: rgb(10, 198, 3);
+  color: #ffffff;
+  margin-left: 15%;
+}
+
+.buscar {
+  margin-left: 71%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.bt-buscar {
+  border-radius: 7px;
+  border: none;
+}
+
+.butt {
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(75, 215, 70);
+}
+
+.but {
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(196, 23, 52);
+}
